@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(186, 199, 69);
+}
+
+.link {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    background-color: rgb(102, 75, 234);
+    border-radius: 100%;
+}
+
+
+.link:before {
+    content: "";
+    z-index: -1;
+    left: 88px;
+    top: -54px;
+    width: 186px;
+    height: 482px;
+    border-radius: 100%;
+    border: 15px solid #37508f;
+    position: absolute;
+    transform: rotate(45deg);
+    background-color: rgb(56, 11, 255);
+    animation: name 1s ease infinite;
+
+}
+
+
+
+
+.link::after {
+    content: "prodjekt";
+    font-size:50px;
+    position: absolute;
+    border: 1px solid #3e378f;
+    padding: 3px 28px;
+    top: 96px;
+    left: 88px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    border-radius: 150px;
+    animation: klit 2s ease infinite;
+}
+
+@keyframes name {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes klit {
+    0% {
+        transform: scale(1);
+    }
+    15% {
+        box-shadow: 0 0 0 20px red
+    }
+    25% {
+        box-shadow: 0 0 0 20px rgb(255, 0, 0),
+        0 0 0 40px rgb(123, 17, 17)
+    }
+    35% {
+        box-shadow: 0 0 0 20px red,
+        0 0 0 40px rgb(123, 22, 22),
+        0 0 0 60px rgb(58, 17, 17)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
